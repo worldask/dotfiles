@@ -6,3 +6,11 @@
 [core]
 	autocrlf = false
 	savecrlf = true
+[alias]
+	co = checkout
+	s = status
+	a = add .
+	c = commit -m
+	bv = branch -v
+	one = log --oneline
+	last = log -1 HEAD
