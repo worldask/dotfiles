@@ -1,0 +1,8 @@
+[user]
+	email = worldask@gmail.com
+	name = worldask
+[push]
+	default = simple
+[core]
+	autocrlf = false
+	savecrlf = true
