@@ -1,0 +1,15 @@
+.DS_Store
+.project
+.buildpath
+.settings/
+.htaccess
+\#*
+.\#*
+*.swp
+*.db
+*~
+
+upload/*
+download/*
+output/*
+node_modules/*
