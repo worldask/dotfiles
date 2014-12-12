@@ -1,16 +1,21 @@
 [user]
-	email = worldask@gmail.com
 	name = worldask
+	email = worldask@gmail.com
+[color]
+	ui = true
 [push]
 	default = simple
 [core]
-	autocrlf = false
-	savecrlf = true
+	editor = vim
+[merge]
+	tool = vimdiff
 [alias]
+	graph = log --pretty=format:\"%h %s\" --graph
+	one = log -10 --oneline
+    bv = branch -v
 	co = checkout
-	s = status
-	a = add .
-	c = commit -m
-	bv = branch -v
-	one = log --oneline
-	last = log -1 HEAD
+    c = commit -m
+    s = status
+    a = add .
+[credential]
+	helper = osxkeychain
