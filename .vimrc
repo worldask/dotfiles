@@ -19,7 +19,7 @@ set et
 set nobackup
 execute pathogen#infect()
 syntax on
-filetype plugin indent on
+" filetype plugin indent on
 
 let &t_Co=256
 colorscheme molokai
@@ -30,3 +30,27 @@ noremap <silent> <Left> :bp<CR>
 noremap <silent> <Right> :bn<CR>
 nnoremap \ :!open <C-R>%<CR><CR>
 xnoremap p pgvy
+
+
+" Vundle
+set nocompatible              " be iMproved
+filetype off                  " required!
+set rtp+=~/.vim/bundle/Vundle.vim/
+
+call vundle#begin()
+
+" let Vundle manage Vundle
+Plugin 'gmarik/Vundle.vim'
+
+" Plugins
+Plugin 'rizzatti/funcoo.vim'
+Plugin 'rizzatti/dash.vim'
+Plugin 'dericofilho/vim-phpfmt'
+
+" Color schemes
+Plugin 'tomasr/molokai'
+Plugin 'flazz/vim-colorschemes'
+
+call vundle#end()
+filetype plugin indent on
+
