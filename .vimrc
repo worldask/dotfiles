@@ -20,8 +20,8 @@ set nobackup
 
 nnoremap ; :
 nnoremap : ;
-noremap <silent> <Left> :bp<CR>
-noremap <silent> <Right> :bn<CR>
+" noremap <silent> <Left> :bp<CR>
+" noremap <silent> <Right> :bn<CR>
 nnoremap \ :!open <C-R>%<CR><CR>
 xnoremap p pgvy
 " Yank text to the OS X clipboard
@@ -47,6 +47,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'rizzatti/funcoo.vim'
 Plugin 'rizzatti/dash.vim'
 Plugin 'groenewege/vim-less'
+Plugin 'Lokaltog/vim-easymotion'
 " Plugin 'dericofilho/vim-phpfmt'
 Plugin 'bling/vim-airline'
 set laststatus=2
