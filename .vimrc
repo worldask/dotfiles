@@ -20,8 +20,8 @@ set nobackup
 
 nnoremap ; :
 nnoremap : ;
-" noremap <silent> <Left> :bp<CR>
-" noremap <silent> <Right> :bn<CR>
+noremap <silent> <Left> :bp<CR>
+noremap <silent> <Right> :bn<CR>
 nnoremap \ :!open <C-R>%<CR><CR>
 xnoremap p pgvy
 " Yank text to the OS X clipboard
@@ -47,9 +47,10 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'rizzatti/funcoo.vim'
 Plugin 'rizzatti/dash.vim'
 Plugin 'groenewege/vim-less'
-Plugin 'Lokaltog/vim-easymotion'
 " Plugin 'dericofilho/vim-phpfmt'
 Plugin 'bling/vim-airline'
+Plugin 'rking/ag.vim'
+Plugin 'kien/ctrlp.vim'
 set laststatus=2
 
 " Color schemes
@@ -64,4 +65,7 @@ colorscheme molokai
 let g:solarized_termtrans = 1
 " colorscheme solarized
 " togglebg#map('<F5>')
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
