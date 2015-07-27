@@ -55,6 +55,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'curist/vim-angular-template'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'shawncplus/phpcomplete.vim'
 set laststatus=2
 
 " Color schemes
