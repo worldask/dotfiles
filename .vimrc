@@ -51,6 +51,10 @@ Plugin 'groenewege/vim-less'
 Plugin 'bling/vim-airline'
 Plugin 'rking/ag.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'curist/vim-angular-template'
+Plugin 'digitaltoad/vim-jade'
 set laststatus=2
 
 " Color schemes
