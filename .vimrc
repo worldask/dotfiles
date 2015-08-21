@@ -44,19 +44,27 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Plugins
+" Base
 Plugin 'rizzatti/funcoo.vim'
-Plugin 'rizzatti/dash.vim'
-Plugin 'groenewege/vim-less'
-" Plugin 'dericofilho/vim-phpfmt'
-Plugin 'bling/vim-airline'
+Plugin 'Lokaltog/vim-easymotion'
 Plugin 'rking/ag.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'godlygeek/tabular'
+set laststatus=2
+
+" UI
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+
+" Language
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'curist/vim-angular-template'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'shawncplus/phpcomplete.vim'
-set laststatus=2
+" Plugin 'dericofilho/vim-phpfmt'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'groenewege/vim-less'
 
 " Color schemes
 Plugin 'tomasr/molokai'
