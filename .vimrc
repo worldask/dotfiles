@@ -20,9 +20,11 @@ set nobackup
 
 nnoremap ; :
 nnoremap : ;
+nnoremap j gj
+nnoremap k gk
 noremap <silent> <Left> :bp<CR>
 noremap <silent> <Right> :bn<CR>
-nnoremap \ :!open <C-R>%<CR><CR>
+" nnoremap \ :!open <C-R>%<CR><CR>
 xnoremap p pgvy
 " Yank text to the OS X clipboard
 noremap <leader>y "*y
@@ -50,6 +52,9 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'rking/ag.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-fugitive'
+Plugin 'spf13/vim-autoclose'
+Plugin 'spf13/PIV'
 set laststatus=2
 
 " UI
