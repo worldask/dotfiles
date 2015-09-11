@@ -46,7 +46,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'rking/ag.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'terryma/vim-multiple-cursors'
+" Plugin 'terryma/vim-multiple-cursors'
 Plugin 'godlygeek/tabular'
 Plugin 'spf13/vim-autoclose'
 set laststatus=2
@@ -62,7 +62,7 @@ Plugin 'curist/vim-angular-template'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'shawncplus/phpcomplete.vim'
 " Plugin 'dericofilho/vim-phpfmt'
-Plugin 'spf13/PIV'
+" Plugin 'spf13/PIV'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'groenewege/vim-less'
 
@@ -81,3 +81,4 @@ let g:solarized_termtrans = 1
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+set nofoldenable
