@@ -5,11 +5,6 @@ endif
 set guioptions=l " scroll bar at left
 set ru    " display status bar
 set hls             " highlight searching keywords
-set foldmethod=syntax
-if has('gui_running')
-    set foldcolumn=4
-endif
-set foldlevel=30
 
 set ts=2
 set sts=2
@@ -18,17 +13,16 @@ set sw=2
 set et
 set nobackup
 
-nnoremap ; :
-nnoremap : ;
-nnoremap j gj
-nnoremap k gk
-noremap <silent> <Left> :bp<CR>
-noremap <silent> <Right> :bn<CR>
+noremap ; :
+noremap : ;
+noremap j gj
+noremap k gk
 " nnoremap \ :!open <C-R>%<CR><CR>
 xnoremap p pgvy
 " Yank text to the OS X clipboard
 noremap <leader>y "*y
 noremap <leader>yy "*Y
+noremap <C-n> :NERDTreeToggle<CR>
 
 execute pathogen#infect()
 syntax on
@@ -51,10 +45,10 @@ Plugin 'rizzatti/funcoo.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'rking/ag.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-fugitive'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'godlygeek/tabular'
 Plugin 'spf13/vim-autoclose'
-Plugin 'spf13/PIV'
 set laststatus=2
 
 " UI
@@ -62,12 +56,13 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 
 " Language
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+" Plugin 'pangloss/vim-javascript'
+" Plugin 'mxw/vim-jsx'
 Plugin 'curist/vim-angular-template'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'shawncplus/phpcomplete.vim'
 " Plugin 'dericofilho/vim-phpfmt'
+Plugin 'spf13/PIV'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'groenewege/vim-less'
 
@@ -86,4 +81,3 @@ let g:solarized_termtrans = 1
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-
