@@ -24,7 +24,7 @@ noremap <leader>y "*y
 noremap <leader>yy "*Y
 noremap <C-n> :NERDTreeToggle<CR>
 
-execute pathogen#infect()
+" execute pathogen#infect()
 syntax on
 
 " Preserve indentation while pasting text from the OS X clipboard
@@ -65,6 +65,7 @@ Plugin 'shawncplus/phpcomplete.vim'
 " Plugin 'spf13/PIV'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'groenewege/vim-less'
+Plugin 'Valloric/YouCompleteMe'
 
 " Color schemes
 Plugin 'tomasr/molokai'
