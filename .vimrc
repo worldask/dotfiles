@@ -17,6 +17,9 @@ noremap ; :
 noremap : ;
 noremap j gj
 noremap k gk
+inoremap jk <esc>
+nnoremap gV `[v`]
+
 " nnoremap \ :!open <C-R>%<CR><CR>
 xnoremap p pgvy
 " Yank text to the OS X clipboard
@@ -44,7 +47,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'rizzatti/funcoo.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'rking/ag.vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 " Plugin 'terryma/vim-multiple-cursors'
 Plugin 'godlygeek/tabular'
@@ -66,6 +69,7 @@ Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'groenewege/vim-less'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'posva/vim-vue'
 
 " Color schemes
 Plugin 'tomasr/molokai'
