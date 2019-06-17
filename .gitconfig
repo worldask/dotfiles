@@ -1,21 +1,31 @@
-[user]
-	name = worldask
-	email = worldask@gmail.com
-[color]
-	ui = true
+[core]
+	autocrlf = false
+	safecrlf = true
+    editor = vim
+	excludesfile = $HOME/.gitignore
 [push]
 	default = simple
-[core]
-	editor = vim
+[user]
+	name = 
+	email = 
+[color]
+    ui = true
 [merge]
-	tool = vimdiff
+    tool = vimdiff
 [alias]
-	graph = log --pretty=format:\"%h %s\" --graph
-	one = log -10 --oneline
+    graph = log --pretty=format:\"%h %s\" --graph
+    one = log -10 --oneline
     bv = branch -v
-	co = checkout
+    co = checkout
     c = commit -m
     s = status
     a = add .
+    pull = pull --ff-only
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
